@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.main_wrapper {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top right, #E0EAF6, #E0EAF6);
+}
+
+.monitor_box_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.monitor_box {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.input_box {
+    display: flex;
+    align-items: center;
+    background-color: #343434;
+    border-radius: 6px;
+    padding: 8px;
+    gap: 6px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.150);
+}
+
+.input_img {
+    height: 30px;
+}
+
+#input_img_small {
+    height: 20px;
+}
+
+.range_style {
+    /* writing-mode: vertical-lr;
+    direction: rtl; */
+    /* width: 20px; */
+    -webkit-appearance: none;
+    appearance: none;
+    /* background-color: #F8D40B; */
+    /* background-color: #E9EAE9; */
+    background: linear-gradient(to right, #F8D40B, #F8D40B) left/0% 100% no-repeat, #E5E5E5;
+    height: 3px;
+    border-radius: 200px;
+    width: 200px;
+}
+
+/* Стилизация ручки (ползунка) */
+.range_style::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #C3D8F5;
+    height: 15px;
+    width: 15px;
+    border-radius: 200px;
+    
+}
+
+/* Стилизация трека */
+.range_style::-webkit-slider-runnable-track {
+    border: 0;
+}
+
+.range_name_style {
+    border: 0;
+}
+
+.brightness {
+    border: 0;
+}
